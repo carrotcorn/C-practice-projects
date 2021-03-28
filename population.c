@@ -21,22 +21,22 @@ int main(void)
 
    // Calculate number of years passed
    years = 0;
-   // int population = startN;
+   int population = startN;
 
-   // if (startN != endN)
-   // {
-   //     do
-   //     {
-   //         population = population + population / 3 - population / 4;
-   //         years++;
-   //     }
-   //     while (population < endN);
-   // }
-   while (startN < endN)
+   if (startN != endN)
    {
-      startN = startN + (startN / 3) - (startN / 4);
-      years++;
+       do
+       {
+           population = population + population / 3 - population / 4;
+           years++;
+       }
+       while (population < endN);
    }
+   // while (startN < endN)
+   // {
+   //    startN = startN + (startN / 3) - (startN / 4);
+   //    years++;
+   // }
 
    printf("Years: %i\n", years);
 }

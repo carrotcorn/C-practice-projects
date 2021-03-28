@@ -1,5 +1,8 @@
 #src files
 src1
+libcs50-10.1.1
+#cs50
+cs50.h
 # Env files
 .env
 
